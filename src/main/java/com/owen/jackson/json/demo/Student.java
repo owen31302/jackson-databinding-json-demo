@@ -1,8 +1,11 @@
 package com.owen.jackson.json.demo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * @author yuchlin on 4/7/19
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Student {
 
     private int id;
