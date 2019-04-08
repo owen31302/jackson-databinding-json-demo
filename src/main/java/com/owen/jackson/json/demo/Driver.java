@@ -18,7 +18,7 @@ public class Driver {
 
             // read JSON file and map/convert tp JAVA POJO
             // data/sample-lite.json
-            Student student = mapper.readValue(new File("data/sample-lite.json"), Student.class);
+            Student student = mapper.readValue(new File("data/sample-full.json"), Student.class);
 
             // print first name and last name
             System.out.println("First name = " + student.getFirstName());
